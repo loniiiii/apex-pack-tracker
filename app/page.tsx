@@ -1,7 +1,11 @@
-export default function Home() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <main style={{ padding: 40, color: 'white', background: 'black', minHeight: '100vh' }}>
-      <h1>Apex Tracker is Working 🚀</h1>
-    </main>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   )
 }
